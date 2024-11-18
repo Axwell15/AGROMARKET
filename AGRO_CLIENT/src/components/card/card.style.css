@@ -1,0 +1,40 @@
+.card{
+    @apply m-4 md:my-24;
+    @apply w-360;
+    @apply h-360;
+    @apply flex flex-col;
+    @apply rounded-lg;
+    @apply shadow-lg;
+    @apply box-border;
+}
+
+.card-content{
+    @apply flex flex-col gap-4 p-4;
+    @apply bg-white;
+    @apply rounded-b-lg;
+}
+
+.card-content p{
+    @apply bg-white;
+}
+
+.card-title{
+    @apply text-2xl font-bold;
+    @apply bg-white;
+}
+
+.card-image{
+    @apply w-full;
+    @apply h-w-image md:h-360;
+    @apply object-cover object-center;
+    @apply rounded-t-lg;
+    @apply cursor-pointer;
+}
+
+.btn-del{
+    @apply bg-red-500;
+    @apply text-white;
+    @apply rounded-lg;
+    @apply p-2;
+    @apply cursor-pointer;
+}

@@ -1,0 +1,34 @@
+.navBar {
+    @apply bg-primary-alt;
+    @apply flex;
+    @apply flex-col;
+    @apply h-full;
+    @apply right-0;
+}
+
+.navBtn {
+    @apply p-5;
+    @apply flex gap-x-4 items-center;
+    @apply text-white;
+    @apply w-full;
+    @apply pb-5;
+    @apply justify-end;
+}
+
+.navOpt {
+    @apply pr-3;
+    @apply w-full;
+}
+
+.navBtn:hover {
+    @apply bg-primary-color;
+}
+
+.show {
+    @apply w-fit;
+    @apply absolute md:relative;
+}
+
+.hide {
+    @apply w-0 md:w-16;
+}

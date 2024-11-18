@@ -1,0 +1,13 @@
+.btn{
+    @apply w-36;
+    @apply h-3;
+    @apply h-fit;
+    @apply bg-white;
+    @apply p-1;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply rounded-lg;
+    @apply shadow-black;
+    @apply font-medium;
+}

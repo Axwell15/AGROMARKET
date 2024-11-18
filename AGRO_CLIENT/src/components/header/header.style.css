@@ -1,0 +1,27 @@
+.header {
+    @apply bg-primary-color;
+    @apply flex;
+    @apply flex-row;
+    @apply justify-between;
+    @apply p-5;
+}
+
+.header-btn {
+    @apply top-2;
+    @apply bg-primary-color;
+}
+
+.headerTitle {
+    @apply text-xl;
+    @apply text-white;
+    @apply items-center;
+    @apply font-title-font;
+    @apply cursor-pointer;
+}
+
+.header-Icon {
+    @apply text-white;
+    @apply mx-1.5;
+    @apply w-12;
+    @apply bg-primary-color;
+}

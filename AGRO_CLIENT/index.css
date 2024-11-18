@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'bree-serif';
+    src: url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap%27');
+}
+
+:root {
+    @apply box-border;
+}
+
+*,
+*::before,
+*::after {
+    @apply box-border;
+    @apply p-0 m-0;
+}
+
+*::-webkit-scrollbar {
+    @apply w-2;
+}
+
+*::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+}
+
+#root {
+    @apply h-screen;
+    @apply overflow-hidden;
+}

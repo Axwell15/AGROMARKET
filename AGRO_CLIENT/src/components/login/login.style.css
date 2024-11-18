@@ -1,0 +1,37 @@
+.login {
+    @apply bg-primary-color;
+    @apply w-full md:w-fit;
+    @apply h-screen;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-around;
+    @apply pt-20;
+}
+
+.container-login-form {
+    @apply flex;
+    @apply flex-col;
+    @apply p-12;
+    @apply items-center;
+}
+
+.login-title {
+    @apply text-white;
+    @apply text-3xl;
+    @apply text-center;
+}
+
+.info-login {
+    @apply flex;
+    @apply flex-col;
+    @apply text-xl;
+    @apply text-white;
+    @apply pb-11;
+}
+
+.info-login input {
+    @apply bg-inherit;
+    @apply border-b-2;
+    @apply border-black;
+    @apply pt-4;
+}
