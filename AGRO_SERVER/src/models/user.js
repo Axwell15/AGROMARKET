@@ -42,7 +42,34 @@ const userSchema = new Schema({
     image: {
         type: String,
         default: "https://res.cloudinary.com/agromarket/image/upload/v1669659305/Avatars/profile-sample.png"
-    }
+    },
+        reviews: [
+            {
+                user: {
+                    type: Schema.Types.ObjectId,
+                    ref: 'User',
+                    required: true
+                },
+                rating: {
+                    type: Number,
+                    required: true,
+                    min: 1,
+                    max: 5
+                },
+                comment: {
+                    type: String,
+                    required: true
+                },
+                createdAt: {
+                    type: Date,
+                    default: Date.now
+                }
+            }
+        ],
+        averageRating: {
+            type: Number,
+            default: 0
+        }
 });
 
 userSchema.pre('save', async function (next) {

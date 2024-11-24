@@ -52,10 +52,7 @@ export const register = async (req, res) => {
 
 
     await Usr.save();
-    //const token = await Usr.getSignedJwtToken();
-    res.status(201).json({
-      message: "Usuario creado",
-    });
+    res.status(200).json({ message: 'User registered successfully' });
   } catch (e) {
     console.log(e.code);
     console.log(e.message);
